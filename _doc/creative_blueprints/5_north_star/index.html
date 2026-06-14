@@ -1,0 +1,79 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <span class="text-xs font-bold uppercase tracking-widest text-green-700">The number that matters</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">North Star Metric</h2>
+      <p class="text-sm text-slate-400 mt-1 italic">Projected impact — based on your inputs</p>
+    </div>
+
+    <!-- Verified Operation definition -->
+    <div class="bg-green-50 border border-green-200 rounded-2xl p-5 mb-4">
+      <span class="text-xs font-bold uppercase tracking-widest text-green-700">Verified Operation</span>
+      <h3 class="text-base font-bold text-slate-800 mt-1">
+        <span class="text-green-700">Checkpoint Logged</span> — a participant's passage recorded at a course checkpoint by an event official in the deployed app
+      </h3>
+    </div>
+
+    <!-- Formula block -->
+    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 mb-4">
+      <span class="text-xs font-bold uppercase tracking-widest text-slate-500 block mb-3">Weekly Volume Formula</span>
+      <div class="flex items-center gap-3 flex-wrap">
+        <span class="bg-amber-100 border border-amber-200 text-amber-800 font-bold px-3 py-2 rounded-lg text-sm">
+          [Participants / event]
+          <span class="block text-amber-500 text-xs font-normal">⚙ Assumption — adjust this</span>
+        </span>
+        <span class="text-slate-400 font-bold text-lg">×</span>
+        <span class="bg-amber-100 border border-amber-200 text-amber-800 font-bold px-3 py-2 rounded-lg text-sm">
+          [Checkpoints / course]
+          <span class="block text-amber-500 text-xs font-normal">⚙ Assumption — adjust this</span>
+        </span>
+        <span class="text-slate-400 font-bold text-lg">×</span>
+        <span class="bg-amber-100 border border-amber-200 text-amber-800 font-bold px-3 py-2 rounded-lg text-sm">
+          [Events / week]
+          <span class="block text-amber-500 text-xs font-normal">⚙ Assumption — adjust this</span>
+        </span>
+        <span class="text-slate-400 font-bold text-lg">=</span>
+        <span class="bg-green-700 text-white font-black px-5 py-2 rounded-xl text-base">
+          WVO / week
+        </span>
+      </div>
+      <p class="text-xs text-slate-400 mt-3 italic">
+        Example: 50 participants × 10 checkpoints × 0.25 events/week = <strong class="text-slate-600">125 verified operations / week</strong>
+      </p>
+    </div>
+
+    <!-- Value + ROI row -->
+    <div class="grid grid-cols-2 gap-4 flex-1">
+
+      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Value per Operation</span>
+          <p class="text-sm text-slate-700 mt-2 leading-relaxed">
+            Time saved vs. manual paper logging × staff hourly rate
+          </p>
+          <p class="text-xs text-slate-400 italic mt-2">
+            Example: 3 min saved × $15 / hr ≈ <strong class="text-slate-600">$0.75 / op</strong>
+          </p>
+        </div>
+        <p class="text-xs text-amber-600 font-semibold mt-3">⚙ Adjust staff rate to match your event</p>
+      </div>
+
+      <div class="bg-green-700 rounded-2xl p-5 text-white flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-green-300">Projected Annual Value</span>
+          <p class="text-sm text-green-100 mt-2 leading-relaxed">
+            125 ops / wk × $0.75 × 52 weeks
+          </p>
+        </div>
+        <div>
+          <div class="text-3xl font-black text-amber-400 mt-2">≈ $4,875 / yr</div>
+          <p class="text-xs text-green-300 italic mt-2">Replace example inputs above with your real numbers to update this figure</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
