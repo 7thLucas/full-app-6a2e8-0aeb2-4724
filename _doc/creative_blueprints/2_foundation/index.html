@@ -1,0 +1,66 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-main { width: 65%; }
+  .mode-portrait .sl-main { width: 100%; }
+  .mode-landscape .sl-visual { width: 35%; }
+  .mode-portrait .sl-visual { height: 30%; width: 100%; }
+  .mode-landscape .sl-zones { flex-direction: row; }
+  .mode-portrait .sl-zones { flex-direction: column; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Problem + Solution -->
+    <div class="sl-main flex flex-col justify-center p-12 gap-5">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-green-700">The Challenge</span>
+        <h2 class="text-3xl font-black text-slate-900 mt-1 mb-5">Why this needed to be built</h2>
+      </div>
+
+      <div class="sl-zones flex gap-5">
+
+        <!-- Problem -->
+        <div class="flex-1 bg-slate-50 rounded-2xl p-6 border border-slate-100">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-3 h-3 rounded-full bg-red-400 flex-none"></div>
+            <span class="text-xs font-bold uppercase tracking-widest text-slate-500">The Problem</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800 mb-3">Managing 100-unit trail events is chaotic</h3>
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li class="flex gap-2"><span class="text-red-400 font-bold flex-none">—</span>Checkpoints tracked on paper or scattered spreadsheets</li>
+            <li class="flex gap-2"><span class="text-red-400 font-bold flex-none">—</span>No real-time visibility for organizers or participants</li>
+            <li class="flex gap-2"><span class="text-red-400 font-bold flex-none">—</span>Leaderboards updated manually — too slow, error-prone</li>
+            <li class="flex gap-2"><span class="text-red-400 font-bold flex-none">—</span>Safety gaps when field positions are unknown</li>
+          </ul>
+        </div>
+
+        <!-- Solution -->
+        <div class="flex-1 bg-green-700 rounded-2xl p-6 text-white">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-3 h-3 rounded-full bg-amber-400 flex-none"></div>
+            <span class="text-xs font-bold uppercase tracking-widest text-green-200">The Solution</span>
+          </div>
+          <h3 class="text-lg font-bold mb-3">One screen that runs the whole event</h3>
+          <ul class="text-sm text-green-100 space-y-2">
+            <li class="flex gap-2"><span class="text-amber-400 font-bold flex-none">✓</span>Instant checkpoint logging from any device</li>
+            <li class="flex gap-2"><span class="text-amber-400 font-bold flex-none">✓</span>Live leaderboard — auto-updated as runners pass through</li>
+            <li class="flex gap-2"><span class="text-amber-400 font-bold flex-none">✓</span>Full organizer dashboard with field visibility</li>
+            <li class="flex gap-2"><span class="text-amber-400 font-bold flex-none">✓</span>Participant profiles with real-time progress tracking</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=forest%20trail%20race%20checkpoint%20at%20night%2C%20glowing%20amber%20lanterns%2C%20volunteers%20with%20tablets%2C%20runners%20passing%20through%2C%20dramatic%20forest%20atmosphere%2C%20deep%20greens%20and%20warm%20light"
+        class="w-full h-full object-cover"
+        alt="Forest checkpoint at night"
+      />
+    </div>
+
+  </div>
+</section>
