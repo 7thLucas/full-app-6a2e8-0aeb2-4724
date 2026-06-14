@@ -1,0 +1,43 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-content { width: 55%; }
+  .mode-portrait .sl-content { width: 100%; flex: none; }
+  .mode-landscape .sl-visual { width: 45%; }
+  .mode-portrait .sl-visual { width: 100%; flex: 1; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Content -->
+    <div class="sl-content flex flex-col justify-between p-12">
+      <div>
+        <span class="inline-block bg-green-700 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-7">Trail Challenge App</span>
+        <h1 class="text-5xl font-black text-slate-900 leading-tight mb-5">
+          Run the ghost.<br/>Own the forest.
+        </h1>
+        <p class="text-base text-slate-600 font-medium max-w-sm leading-relaxed">
+          Real-time checkpoint tracking, live leaderboards, and full event control — purpose-built for Forest Ghost 100.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-0.5 bg-amber-500"></div>
+          <span class="text-slate-800 font-bold text-xs uppercase tracking-widest">Forest Ghost 100</span>
+        </div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=dramatic%20aerial%20view%20of%20dense%20forest%20trail%20at%20dawn%2C%20lone%20runner%20on%20misty%20path%20through%20ancient%20trees%2C%20cinematic%20lighting%2C%20deep%20greens%2C%20amber%20sunrise%2C%20moody%20atmosphere"
+        class="w-full h-full object-cover"
+        alt="Forest trail at dawn"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent" style="opacity:0.25;"></div>
+    </div>
+
+  </div>
+</section>
